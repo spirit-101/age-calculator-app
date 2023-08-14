@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+    <script defer src="script.js"></script>
+
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body>
+    <div class="container">
+      <form class="form" name="dob-inputs">
+        <div class="form__input">
+          <label class="label__day" for="dob-day">Day</label>
+          <input
+            type="number"
+            id="dob-day"
+            type="text"
+            placeholder="DD"
+            required
+          />
+          <span class="error error__day hidden">Must be a valid day</span>
+        </div>
+
+        <div class="form__input">
+          <label class="label__month" for="dob-month">Month</label>
+          <input
+            type="number"
+            id="dob-month"
+            type="text"
+            placeholder="MM"
+            required
+          />
+          <span class="error error__month hidden">Must be a valid month</span>
+        </div>
+
+        <div class="form__input">
+          <label class="label__year" for="dob-year">Year</label>
+          <input
+            type="number"
+            id="dob-year"
+            type="text"
+            placeholder="YYYY"
+            min="1900"
+            required
+          />
+          <span class="error error__year hidden">Must be a valid year</span>
+        </div>
+      </form>
+
+      <div class="submit__box">
+        <div class="submit__box-border"></div>
+        <button class="submit__box-btn" type="submit">
+          <img src="assets/images/icon-arrow.svg" alt="" aria-hidden="true" />
+        </button>
+      </div>
+
+      <div class="age__info">
+        <h1 class="heading__primary">
+          <span class="years">--</span>
+          years
+        </h1>
+
+        <h2 class="heading__secondary">
+          <span class="months">--</span>
+          months
+        </h2>
+
+        <h2 class="heading__secondary">
+          <span class="days">--</span>
+          days
+        </h2>
+      </div>
+    </div>
+  </body>
+</html>
