@@ -6,7 +6,7 @@
 
 🌐 [View the live site](https://spirit-101.github.io/age-calculator-app/)
 
-🧠 [Check out the solution](https://www.frontendmentor.io/solutions/faq-accordion-card-pDPUcKgc18)
+🧠 [Check out the solution](https://www.frontendmentor.io/solutions/age-calculator-app-2oUrVdgMo_)
 
 📝 [View the challenge](https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q)
 
