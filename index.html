@@ -25,69 +25,75 @@
     <title>Frontend Mentor | Age calculator app</title>
   </head>
   <body>
-    <div class="container">
-      <form class="form" name="dob-inputs">
-        <div class="form__input">
-          <label class="label__day" for="dob-day">Day</label>
-          <input
-            type="number"
-            id="dob-day"
-            type="text"
-            placeholder="DD"
-            required
-          />
-          <span class="error error__day hidden">Must be a valid day</span>
+    <main>
+      <div class="container">
+        <form class="form" name="dob-inputs">
+          <div class="form__input">
+            <label class="label__day" for="dob-day">Day</label>
+            <input
+              type="number"
+              id="dob-day"
+              type="text"
+              placeholder="DD"
+              required
+            />
+            <span class="error error__day hidden">Must be a valid day</span>
+          </div>
+
+          <div class="form__input">
+            <label class="label__month" for="dob-month">Month</label>
+            <input
+              type="number"
+              id="dob-month"
+              type="text"
+              placeholder="MM"
+              required
+            />
+            <span class="error error__month hidden">Must be a valid month</span>
+          </div>
+
+          <div class="form__input">
+            <label class="label__year" for="dob-year">Year</label>
+            <input
+              type="number"
+              id="dob-year"
+              type="text"
+              placeholder="YYYY"
+              min="1900"
+              required
+            />
+            <span class="error error__year hidden">Must be a valid year</span>
+          </div>
+        </form>
+
+        <div class="submit__box">
+          <div class="submit__box-border"></div>
+          <button
+            class="submit__box-btn"
+            type="submit"
+            aria-label="Submit Form"
+          >
+            <img src="assets/images/icon-arrow.svg" alt="" aria-hidden="true" />
+          </button>
         </div>
 
-        <div class="form__input">
-          <label class="label__month" for="dob-month">Month</label>
-          <input
-            type="number"
-            id="dob-month"
-            type="text"
-            placeholder="MM"
-            required
-          />
-          <span class="error error__month hidden">Must be a valid month</span>
-        </div>
+        <div class="age__info">
+          <h1 class="heading__primary">
+            <span class="years">--</span>
+            years
+          </h1>
 
-        <div class="form__input">
-          <label class="label__year" for="dob-year">Year</label>
-          <input
-            type="number"
-            id="dob-year"
-            type="text"
-            placeholder="YYYY"
-            min="1900"
-            required
-          />
-          <span class="error error__year hidden">Must be a valid year</span>
-        </div>
-      </form>
+          <h2 class="heading__secondary">
+            <span class="months">--</span>
+            months
+          </h2>
 
-      <div class="submit__box">
-        <div class="submit__box-border"></div>
-        <button class="submit__box-btn" type="submit">
-          <img src="assets/images/icon-arrow.svg" alt="" aria-hidden="true" />
-        </button>
+          <h2 class="heading__secondary">
+            <span class="days">--</span>
+            days
+          </h2>
+        </div>
       </div>
-
-      <div class="age__info">
-        <h1 class="heading__primary">
-          <span class="years">--</span>
-          years
-        </h1>
-
-        <h2 class="heading__secondary">
-          <span class="months">--</span>
-          months
-        </h2>
-
-        <h2 class="heading__secondary">
-          <span class="days">--</span>
-          days
-        </h2>
-      </div>
-    </div>
+    </main>
   </body>
 </html>
